@@ -11,4 +11,8 @@ urlpatterns = [
     path("stations/new/", views.CreateStationView.as_view(), name="create_station"),
     path("stations/<pk>/update", views.UpdateStationView.as_view(), name="update_station"),
     path("stations/<pk>/delete", views.DeleteStationView.as_view(), name="delete_station"),
+    path("stops/", views.StopsView.as_view(), name="stops"),
+    path("stops/new/", views.CreateStopView.as_view(), name="create_stop"),
+    path("stops/<pk>/update", views.UpdateStopView.as_view(), name="update_stop"),
+    path("stops/<pk>/delete", views.DeleteStopView.as_view(), name="delete_stop"),
 ]
