@@ -144,7 +144,32 @@ body {
   .line-table ul {
     padding: 0;
   }
-  
+
+  .line-table tr:nth-of-type(1) #line-name {
+    color:#663d5e;
+    font-weight: bold;
+  }
+
+  .line-table tr:nth-of-type(2) #line-name {
+    color:#615799;
+    font-weight: bold;
+  }
+
+  .line-table tr:nth-of-type(3) #line-name {
+    color:#57995d;
+    font-weight: bold;
+  }
+
+  .line-table tr:nth-of-type(4) #line-name {
+    color:#996c57;
+    font-weight: bold;
+  }
+
+  .line-table tr:nth-of-type(5) #line-name {
+    color:#999857;
+    font-weight: bold;
+  }
+
   main form input[type="submit"] {
     width: max-content;
   }

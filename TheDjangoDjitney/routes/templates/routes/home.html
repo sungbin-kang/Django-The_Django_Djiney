@@ -12,7 +12,7 @@
       <tbody>
         {% for line in lines %}
         <tr>
-          <td>{{ line.name }}</td>
+          <td id="line-name">{{ line.name }}</td>
           <td>
             <ul>
               {% for stop in line.stop_set.all %}
