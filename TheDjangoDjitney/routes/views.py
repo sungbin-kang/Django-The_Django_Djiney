@@ -1,3 +1,4 @@
+from django.http.response import StreamingHttpResponse
 from django.shortcuts import render
 from .models import Line, Station, Stop
 from .forms import  StopForm, LineForm, StationForm
@@ -32,5 +33,24 @@ class UpdateLineView(UpdateView):
 
 class DeleteLineView(DeleteView):
   model = Line
-  success_url = "/lines"
+  success_url = "/lines/"
   template_name = "routes/delete_line.html"
+
+class StationView(ListView):
+  model = Station
+  template_name = "routes/stations.html"
+
+class CreateStationView(CreateView):
+  model = Station
+  template_name = "routes/add_station.html"
+  form_class = StationForm
+
+class UpdateStationView(UpdateView):
+  model = Station
+  template_name = "routes/update_station.html"
+  form_class = StationForm
+
+class DeleteStationView(DeleteView):
+  model = Station
+  template_name = "routes/delete_station.html"
+  success_url = "/stations/"
