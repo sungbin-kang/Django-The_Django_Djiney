@@ -1,9 +1,10 @@
 from django.db import models
-import datetime
+from datetime import date
 
 
 class Line(models.Model):
   name = models.CharField(unique=True, max_length=200)
+  schedule = models.TimeField()
 
   def get_absolute_url(self):
     return "/lines"
@@ -15,6 +16,8 @@ class Line(models.Model):
 class Station(models.Model):
   name = models.CharField(unique=True, max_length=200)
   accessible = models.BooleanField(default=False)
+  age = models.PositiveSmallIntegerField()
+  last_cleaned_date = models.DateField()
 
   def get_absolute_url(self):
     return "/stations"

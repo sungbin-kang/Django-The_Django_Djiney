@@ -8,7 +8,9 @@
     <thead>
       <tr>
         <th>Name</th>
+        <th>Age</th>
         <th>On Lines</th>
+        <th>Last Clean Date</th>
         <th>Actions</th>
       </tr>
     </thead>
@@ -19,9 +21,11 @@
             <a href="{% url "update_station" station.id %}">{{ station.name }}</a>
             {% if station.accessible %}<span>  ♿️ </span>{% endif %}
           </td>
+          <td>{{ station.age }}</td>
           <td>
             {% for stop in station.stop_set.all %}{{stop.line.name}}, {% endfor %}
           </td>
+          <td>{{ station.last_cleaned_date }}</td>
           <td><a href="{% url "delete_station" station.id %}" style="text-decoration: none; color: inherit;">❌</a></td>
         </tr>
     {% endfor %}
