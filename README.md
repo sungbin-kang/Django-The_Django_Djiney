@@ -32,6 +32,16 @@ The main <strong>routes</strong> app uses three fundamental models <code>Line</c
 Please see requriements.txt for required packages.
 
 ### Home Page
-<img src="/img/:home:.png" height=150 width=200 />
+<img src="/img/:home:.png" height=200 width=300 alt="Screenshot of '/home/' Page"/>
 
-### 
+### Lines
+<img src="/img/:lines:.png" height=200 width=300 alt="Screenshot of '/lines/' Page"/>
+
+### Stations
+<img src="/img/:stations:.png" height=200 width=300 alt="Screenshot of '/stations/' Page"/>
+
+### Create Station
+<img src="/img/:stations:new:.png" height=200 width=300 alt="Screenshot of '/stations/new/' Page"/>
+
+### Delete Stop
+<img src="/img/:stops:1:delete:.png" height=200 width=300 alt="Screenshot of '/stops/1/delete/' Page"/>
