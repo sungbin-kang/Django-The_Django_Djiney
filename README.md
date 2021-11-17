@@ -31,4 +31,7 @@ The main <strong>routes</strong> app uses three fundamental models <code>Line</c
 
 Please see requriements.txt for required packages.
 
-<img src="/img/:home:.png" />
+### Home Page
+<img src="/img/:home:.png" height=150 width=200 />
+
+### 
