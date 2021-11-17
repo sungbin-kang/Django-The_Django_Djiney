@@ -4,7 +4,6 @@ from datetime import date
 
 class Line(models.Model):
   name = models.CharField(unique=True, max_length=200)
-  schedule = models.TimeField()
 
   def get_absolute_url(self):
     return "/lines"
